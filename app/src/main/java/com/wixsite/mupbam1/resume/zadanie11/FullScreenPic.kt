@@ -25,7 +25,6 @@ class FullScreenPic : AppCompatActivity() {
 
     private fun tagGlide(tagInt: String) {
         Glide.with(this).load(tagInt).into(binding.ivPic)
-
     }
 
 

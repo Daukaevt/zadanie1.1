@@ -23,15 +23,12 @@ class TagsAdapter(val cntxt:Context, private val tags: ArrayList<String>, privat
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val tag = tags[position]
-        //Log.d("MyLog","iii-$tag")
 
         Glide.with(cntxt).load(tag).centerCrop().into(holder.tagTV)
 
         holder.tagTV.setOnClickListener {
            onClickListener.onClicked(tag)
-
         }
-
     }
 
     override fun getItemCount(): Int {
