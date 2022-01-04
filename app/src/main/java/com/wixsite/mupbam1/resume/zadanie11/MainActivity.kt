@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
         spanCount = getString(R.string.span)
         spanCount1=spanCount.toInt()
         val swipe:SwipeRefreshLayout=binding.swipeRefreshLayout
